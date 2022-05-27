@@ -46,4 +46,17 @@ let middleNums = numbers.splice(1,3)
 
 // CODE HERE
 
-let bigOrSmall 
+function bigOrSmall(arr) {
+  const answers = []
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+    answers.push('BIG') 
+  } else {
+    answers.push('small')
+  }
+  }
+  return answers
+} 
+  
+console.log(      bigOrSmall([1,20000,4,-7000,4,6000]))
