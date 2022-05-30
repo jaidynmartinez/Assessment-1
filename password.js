@@ -19,7 +19,7 @@ reader.question("What is your password? ", function(input){
     if (password.length >= 10 && /\d/.test(input)){
         console.log('Strong Password!');
     } else if (!/\d/.test(input)){
-        console.log('Weak Password! Must have at least 10 characters.')
+        console.log('Must have 10 characters and at least one number.')
     }
     
 
